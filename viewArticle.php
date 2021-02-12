@@ -84,8 +84,8 @@ if (isset($_REQUEST['articleid'])) {
                             ' . $articleData['descr'] . '
                             <br>
                             <h2>The Document:</h2>
-                                <embed class="col-md-12" height="500" type="application/pdf" src="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '">
-</object>';
+                                <iframe class="col-md-12" height="800" src="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '"></iframe>
+';
     } else {
         ?>
                             <script>alert("This article does not belong to you."); window.history.back();</script>
