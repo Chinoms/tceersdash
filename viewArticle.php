@@ -52,7 +52,7 @@ if (isset($_REQUEST['articleid'])) {
                             ' . $articleData['descr'] . '
                             <br>
                             <h2>The Document:</h2>
-                                <iframe class="col-md-12" height="500" src="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '"></iframe
+                                <embed class="col-md-12" height="500" src="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '">
 </object>';
         //  echo ;
     } elseif ($payInfo['payer_id'] === $userInfo['id']) {
