@@ -17,7 +17,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $localhost)) {
    $dbname = "britnnik_ukwuoma";
    $port = 8080;
    global $baseURL;
-   $baseURL = "http://app.tceers.com/";
+   $baseURL = "https://app.tceers.com";
    $contactEmail = "enquiries@tceers.com";
 }
 
