@@ -52,6 +52,9 @@ if (isset($_REQUEST['articleid'])) {
                             ' . $articleData['descr'] . '
                             <br>
                             <h2>The Document:</h2>
+                            <a href="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '"><button class="btn btn-primary">Download Now</button></a>
+                            <br>
+                            <br>
                                 <embed class="col-md-12" height="500" src="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '">
 </object>';
         //  echo ;

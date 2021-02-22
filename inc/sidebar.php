@@ -42,7 +42,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="addJournal.php"><i class="fa fa-circle-o"></i> Submit Journal</a></li>
-            <li><a href="pendingJournals.php"><i class="fa fa-circle-o"></i> View Pending Journals</a></li>
+            <!--li><a href="pendingJournals.php"><i class="fa fa-circle-o"></i> View Pending Journals</a></li-->
             <li><a href="approvedJournals.php"><i class="fa fa-circle-o"></i> View Accepted Journals</a></li>
           </ul>
         </li>
@@ -59,14 +59,14 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="addArticle.php"><i class="fa fa-circle-o"></i> Submit Serial</a></li>
-            <li><a href="pendingArticles.php"><i class="fa fa-circle-o"></i> View Pending Serials</a></li>
+            <!--li><a href="pendingArticles.php"><i class="fa fa-circle-o"></i> View Pending Serials</a></li-->
             <li><a href="approvedArticles.php"><i class="fa fa-circle-o"></i> View Accepted Serials</a></li>
           </ul>
         </li>
 
 
         <!----New List Starts here-->
-        <li class="treeview">
+        <!--li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Paid Materials</span>
@@ -77,7 +77,7 @@
           <ul class="treeview-menu">
             <li><a href="paidItems.php"><i class="fa fa-circle-o"></i> View Premium Materials</a></li>
           </ul>
-        </li>
+        </li-->
 
         <li class="treeview">
           <a href="#">
@@ -97,7 +97,7 @@
         <?php 
         if($checkUsers->userData($conn)['priv'] === "superadmin") {
           echo '
-        <li class="treeview">
+        <!--li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Administration</span>
@@ -108,7 +108,7 @@
           <ul class="treeview-menu">
             <li><a href="pendingJournals.php"><i class="fa fa-circle-o"></i> View Pending Journals</a></li>
           </ul>
-        </li>';
+        </li-->';
         }
          ?>
     </section>
