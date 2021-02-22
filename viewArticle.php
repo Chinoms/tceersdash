@@ -87,7 +87,7 @@ if (isset($_REQUEST['articleid'])) {
                             ' . $articleData['descr'] . '
                             <br>
                             <h2>The Document:</h2>
-                                <iframe class="col-md-12" height="800" src="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '"></iframe>
+                                <embed class="col-md-12" height="800" src="' . $baseURL . str_replace("..", "", $articleData["file_url"]) . '">
 ';
     } else {
         ?>

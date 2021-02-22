@@ -71,7 +71,9 @@ class seers Extends fileUpload{
             <td>".$approvedArticles['title']."</td>
             <td>".$approvedArticles['date_added']."</td>
             <td><span class='label label-success'>Approved</span></td>
-            <td><a href = 'viewArticle.php?articleid=".$approvedArticles['id']."'><button class='btn btn-primary'>View <i class='fa fa-eye'></i></button></a> &nbsp; <a href='#!'><button class='btn btn-danger' disabled>Delete <i class='fa fa-trash'></i></button></a></td>
+            <td><a href = 'viewArticle.php?articleid=".$approvedArticles['id']."'><button class='btn btn-primary'>View <i class='fa fa-eye'></i></button></a> &nbsp; 
+            <a href='delete.php?id=".$approvedArticles['id']."'><button class='btn btn-danger'>Delete <i class='fa fa-trash'></i></button></a>
+            </td>
           </tr>";
         }
         
