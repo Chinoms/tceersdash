@@ -21,7 +21,7 @@ function redirectUser(ajaxFeedback){
 			  if(ajax.responseText !== "failed"){
 				  var ajaxFeedback = ajax.responseText;
 				  _("loginInfo").innerHTML = ajaxFeedback;
-					window.location.assign("pendingJournals.php");
+					window.location.assign("approvedArticles.php");
 				 //setTimeout(redirectUser, 2000)
 				  
 			  }else{
